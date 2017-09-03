@@ -25,61 +25,27 @@
             var ui = $.summernote.ui;
             var options = context.options;
 
-            var del = ui.button({
-                contents: '<del>D</del>',
-                tooltip: 'Deleted text <del>',
-                click: function (e) {
-                    self.wrapInTag('del');
-                }
-            });
+            self.generateBtn = function(tag, tooltip) {
+                var char = tag.slice(0,1).toUpperCase();
+                return ui.button({
+                    contents: '<'+tag+'>'+char+'</'+tag+'>',
+                    tooltip: tooltip + ' <' + tag + '>',
+                    className: 'note-add-text-tags-btn',
+                    click: function (e) {
+                        self.wrapInTag(tag);
+                    }
+                });
+            };
 
-            var ins = ui.button({
-                contents: '&nbsp;<ins>I</ins>&nbsp;',
-                tooltip: 'Inserted text <ins>',
-                click: function (e) {
-                    self.wrapInTag('ins');
-                }
-            });
 
-            var mark = ui.button({
-                contents: '<mark>M</mark>',
-                tooltip: 'Marked text <mark>',
-                click: function (e) {
-                    self.wrapInTag('mark');
-                }
-            });
+            var del = self.generateBtn('del', 'Deleted text');
+            var ins = self.generateBtn('ins', 'Inserted text');
+            var small = self.generateBtn('small', 'Fine print');
+            var mark = self.generateBtn('mark', 'Highlighted text');
+            var variable = self.generateBtn('var', 'Variable');
+            var keyboard = self.generateBtn('kbd', 'User input');
+            var code = self.generateBtn('code', 'Inline code');
 
-            var small = ui.button({
-                contents: '<small>S<small>&nbsp;',
-                tooltip: 'Small text <small>',
-                click: function (e) {
-                    self.wrapInTag('small');
-                }
-            });
-
-            var code = ui.button({
-                contents: '<code>C</code>',
-                tooltip: 'Inline code <code>',
-                click: function (e) {
-                    self.wrapInTag('code');
-                }
-            });
-
-            var keyboard = ui.button({
-                contents: '<kbd>K</kbd>', // '<i class="fa fa-keyboard-o">',
-                tooltip: 'User input <kbd>',
-                click: function (e) {
-                    self.wrapInTag('kbd');
-                }
-            });
-
-            var variable = ui.button({
-                contents: ' <var>X</var>',
-                tooltip: 'Variable <var>',
-                click: function (e) {
-                    self.wrapInTag('var');
-                }
-            });
 
             context.memo('button.add-text-tags', function () {
                 return ui.buttonGroup([

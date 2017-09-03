@@ -10,3 +10,8 @@
     margin-right: 5px;
 
 }
+
+.note-add-text-tags-btn {
+    font-family: "Times New Roman", serif;
+    min-width: 30px;
+}

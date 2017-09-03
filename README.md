@@ -1,5 +1,5 @@
 # Summernote Extension: Additional Text Tags
-A summernote extension that adds additional text-level semantic elements (html tags) that are already provided with styling by Bootstrap 3 and 4
+A [Summernote](http://summernote.org/) extension that adds additional text-level semantic elements (html tags) that are already provided with styling by Bootstrap 3 and 4
 
 ### Additional tags
 
