@@ -18,7 +18,7 @@ A [Summernote](http://summernote.org/) extension that adds additional text-level
 ### Usage
 
 1. Include the js and css
-2. add `add-text-tags` too your toolbar in the `style` or `font` group:
+2. add `add-text-tags` to your toolbar in the `style` or `font` group:
 
         $('#summernote').summernote({
             toolbar: [
