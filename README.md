@@ -4,7 +4,7 @@ A [Summernote](http://summernote.org/) extension that adds additional text-level
 ### Additional tags
 
 * [Inline text elements](https://v4-alpha.getbootstrap.com/content/typography/#inline-text-elements):
-  * `<mark>` higlighted text
+  * `<mark>` highlighted text
   * `<small>` fine print
   * `<ins>` indicate text added to a document
   * `<delete>` indicating text deleted from a document
