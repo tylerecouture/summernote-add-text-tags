@@ -33,5 +33,5 @@ See Example/example.html or the [fiddle here](https://jsfiddle.net/43Tesseracts/
 
 ### Limitations
 
-* This extension doesn't use summernote's built in parser, so if you try to apply one of these styles accross another node (style or block element), it will fail (nothing will happen).
+* This extension doesn't use summernote's built in parser, but it can handle some basic cross-node insertions.
 * The elements won't toggle on and off, however they will clear with Summernote's `Remove Font Style` button
