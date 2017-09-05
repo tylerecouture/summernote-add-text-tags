@@ -134,8 +134,12 @@
                         // Parses inline nodes, but not block based nodes...blocks are handled above.
                         newNode.appendChild(range.extractContents());
                         range.insertNode(newNode)
+
+                        // Restore the selections
+                        range.selectNodeContents(newNode);
+                        selection.removeAllRanges();
+                        selection.addRange(range);
                     }
-                    //context.invoke('editor.restoreRange');
                 }
             };
         }
