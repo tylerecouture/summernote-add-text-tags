@@ -11,8 +11,9 @@ A [Summernote](http://summernote.org/) extension that adds additional text-level
 
 * [Inline code elements](https://v4-alpha.getbootstrap.com/content/code/)
   * `<code>` for inline code snippets
+  * `<samp>` for sample output
   * `<kbd>` for indicating user input.
-  * `<var>` for indicating variables.
+  * `<var>` for indicating variables.  
 
 
 ### Usage
