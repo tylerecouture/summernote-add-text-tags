@@ -45,6 +45,7 @@
             var variable = self.generateBtn('var', 'Variable');
             var keyboard = self.generateBtn('kbd', 'User input');
             var code = self.generateBtn('code', 'Inline code');
+            var samp = self.generateBtn('samp', 'Sample output');
 
 
             context.memo('button.add-text-tags', function () {
@@ -60,7 +61,7 @@
                     ui.dropdown([
                         ui.buttonGroup({
                             className: 'note-add-text-tags-code',
-                            children: [code, keyboard, variable]
+                            children: [code, samp, keyboard, variable]
                         }),
                         ui.buttonGroup({
                             className: 'note-add-text-tags-other',
