@@ -29,7 +29,7 @@ A [Summernote](http://summernote.org/) extension that adds additional text-level
 
 ### Example
 
-See Example/example.html or the [fiddle here](https://jsfiddle.net/43Tesseracts/y4t0zep2/).
+See Example/example.html or the [fiddle here](https://jsfiddle.net/43Tesseracts/y4t0zep2/) (with Summernotes 0.8.7).
 
 ### Limitations
 
