@@ -35,7 +35,7 @@
                         event: 'add_tt',
                         value: tag,
                         title: tooltip + ' <' + tag + '>',
-//                         hide: true,
+                        // hide: true,
                         className: 'note-add-text-tags-btn'
                     });
                 };
@@ -47,16 +47,17 @@
                 var variable = generateBtn('var', 'Variable');
                 var keyboard = generateBtn('kbd', 'User input');
                 var code = generateBtn('code', 'Inline code');
-//                 var strong = generateBtn('strong', 'Very important (SEO)');
+                var samp = generateBtn('samp', 'Sample output');
 
                 var dropdown = '<div class="dropdown-menu">';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
                 dropdown    += del + ins + small + mark + '</div>';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += variable + keyboard + code + '</div>';
-//                 dropdown    += strong + '</div>';
+                dropdown    += variable + keyboard + code + samp + '</div>';
 
-//                 return tmpl.dropdown(dropdown, '', 'div');
+                // tplDropdown is not exported through renderer.getTemplate() Need code like :
+                // var tplDropdown = renderer.getTemplate().dropdown;
+                // return tmpl.dropdown(dropdown, '', 'div');
                 return tmpl.button('+', {
                     title: 'more',
                     hide: true,
@@ -64,7 +65,6 @@
                 });
 
             },
-            // fin add_text_tags
             
         },
             
