@@ -1,5 +1,6 @@
 # Summernote Extension: Additional Text Tags
-A [Summernote](http://summernote.org/) extension that adds additional text-level semantic elements (html tags) that are already provided with styling by Bootstrap 3 and 4
+A [Summernote](http://summernote.org/) extension that adds additional text-level semantic elements (html tags) that are already provided with styling by Bootstrap 3 and 4.
+A backport for older Summernote version (0.6.16) is available in a separate branch.
 
 ### Additional tags
 
@@ -33,5 +34,5 @@ See Example/example.html or the [fiddle here](https://jsfiddle.net/43Tesseracts/
 
 ### Limitations
 
-* This extension doesn't use summernote's built in parser, but it can handle some basic cross-node insertions.
-* The elements won't toggle on and off, however they will clear with Summernote's `Remove Font Style` button
+* This extension doesn't use Summernote's built in parser, but it can handle some basic cross-node insertions.
+* The elements won't toggle on and off, however they will clear with Summernote's `Remove Font Style` button (rubber icon).
